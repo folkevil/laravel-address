@@ -15,9 +15,7 @@ class MigrationWerxeAddressCreateCountriesTable extends Migration
     {
         Schema::create('countries', function (Blueprint $table) {
             $table->increments('id');
-
             $table->timestamps();
-
             $table->string('iso_name');
             $table->string('name');
 

@@ -15,17 +15,15 @@ class MigrationWerxeAddressCreateAddressesTable extends Migration
     {
         Schema::create('addresses', function (Blueprint $table) {
             $table->increments('id');
-
             $table->timestamps();
-
             $table->morphs('entity');
-            $table->integer('country_id');
             $table->string('name');
             $table->string('street');
             $table->string('locality');
             $table->string('region');
             $table->string('post_office_box_number')->nullable();
             $table->string('postal_code');
+            $table->integer('country_id');
 
             $table->engine = 'InnoDB';
         });
