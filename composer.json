@@ -1,0 +1,34 @@
+{
+    "name": "werxe/address",
+    "description": "Address management for Laravel 5.1.",
+    "keywords": [ "php", "laravel", "ecommerce", "address", "addresses", "customer", "customers" ],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Bruno Gaspar",
+            "email": "bruno@werxe.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/database": "5.1.*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.0"
+    },
+    "autoload": {
+        "classmap": [ "src/migrations" ],
+        "psr-4": { "Werxe\\Address\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Werxe\\Address\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "minimum-stability": "stable"
+}
