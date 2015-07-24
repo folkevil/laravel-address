@@ -26,9 +26,7 @@ class Country extends Model implements Contract
     }
 
     /**
-     * Determines if the country has any provinces.
-     *
-     * @return bool
+     * {@inheritdoc}
      */
     public function hasProvinces()
     {

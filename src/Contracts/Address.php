@@ -17,11 +17,4 @@ interface Address
      * @return \Illuminate\Database\Eloquent\Relations\MorphTo
      */
     public function entity();
-
-    /**
-     * Returns the address in a valid HTML schema format.
-     *
-     * @return string
-     */
-    // public function format();
 }

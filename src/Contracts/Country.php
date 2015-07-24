@@ -10,4 +10,11 @@ interface Country
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
     public function provinces();
+
+    /**
+     * Determines if the country has any provinces.
+     *
+     * @return bool
+     */
+    public function hasProvinces();
 }
