@@ -21,21 +21,6 @@ class MigrationWerxeAddressCreateCountriesTable extends Migration
 
             $table->engine = 'InnoDB';
         });
-
-        // Schema::create('country_translation', function (Blueprint $table) {
-        //     $table->increments('id');
-
-        //     $table->integer('country_id');
-        //     $table->string('locale', 11);
-        //     $table->string('name');
-
-        //     $table->engine = 'InnoDB';
-
-        //     $table->foreign('country_id')->references('id')->on('countries')
-        //         ->onUpdate('restrict')
-        //         ->onDelete('cascade')
-        //     ;
-        // });
     }
 
     /**
