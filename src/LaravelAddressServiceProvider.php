@@ -4,7 +4,7 @@ namespace Werxe\LaravelAddress;
 
 use Illuminate\Support\ServiceProvider;
 
-class AddressServiceProvider extends ServiceProvider
+class LaravelAddressServiceProvider extends ServiceProvider
 {
     /**
      * {@inheritdoc}
