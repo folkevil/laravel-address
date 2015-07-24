@@ -1,8 +1,8 @@
 <?php
 
-namespace Werxe\Address\Tests;
+namespace Werxe\LaravelAddress\Tests;
 
-use Werxe\Address\Entities\Country;
+use Werxe\LaravelAddress\Entities\Country;
 use Illuminate\Support\Facades\Schema;
 
 class FunctionalTestCase extends \Orchestra\Testbench\TestCase

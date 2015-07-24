@@ -1,8 +1,8 @@
 <?php
 
-namespace Werxe\Address\Traits;
+namespace Werxe\LaravelAddress\Traits;
 
-use Werxe\Address\Contracts\Address;
+use Werxe\LaravelAddress\Contracts\Address;
 
 trait AddressableTrait
 {
@@ -27,7 +27,7 @@ trait AddressableTrait
      * Creates a new address.
      *
      * @param  array  $attributes
-     * @return \Werxe\Address\Contracts\Address
+     * @return \Werxe\LaravelAddress\Contracts\Address
      */
     public function createAddress(array $attributes)
     {
@@ -37,9 +37,9 @@ trait AddressableTrait
     /**
      * Updates the given address.
      *
-     * @param  \Werxe\Address\Contracts\Address  $address
+     * @param  \Werxe\LaravelAddress\Contracts\Address  $address
      * @param  array  $attributes
-     * @return \Werxe\Address\Contracts\Address
+     * @return \Werxe\LaravelAddress\Contracts\Address
      */
     public function updateAddress(Address $address, array $attributes)
     {
@@ -51,7 +51,7 @@ trait AddressableTrait
     /**
      * Deletes the given address.
      *
-     * @param  \Werxe\Address\Contracts\Address  $address
+     * @param  \Werxe\LaravelAddress\Contracts\Address  $address
      * @return bool
      */
     public function deleteAddress(Address $address)

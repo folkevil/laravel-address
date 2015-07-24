@@ -1,9 +1,9 @@
 <?php
 
-namespace Werxe\Address\Entities;
+namespace Werxe\LaravelAddress\Entities;
 
-use Werxe\Address\Entities\Country;
-use Werxe\Address\Contracts\Province as Contract;
+use Werxe\LaravelAddress\Entities\Country;
+use Werxe\LaravelAddress\Contracts\Province as Contract;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
 class Province extends Eloquent implements Contract

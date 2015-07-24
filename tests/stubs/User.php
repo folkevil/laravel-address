@@ -1,10 +1,10 @@
 <?php
 
-namespace Werxe\Address\Tests\Stubs;
+namespace Werxe\LaravelAddress\Tests\Stubs;
 
-use Werxe\Address\Entities\Address;
+use Werxe\LaravelAddress\Entities\Address;
 use Illuminate\Database\Eloquent\Model;
-use Werxe\Address\Traits\AddressableTrait;
+use Werxe\LaravelAddress\Traits\AddressableTrait;
 
 class User extends Model
 {

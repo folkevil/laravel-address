@@ -1,10 +1,10 @@
 <?php
 
-namespace Werxe\Address\Entities;
+namespace Werxe\LaravelAddress\Entities;
 
-use Werxe\Address\Schema;
-use Werxe\Address\Entities\Country;
-use Werxe\Address\Contracts\Address as Contract;
+use Werxe\LaravelAddress\Schema;
+use Werxe\LaravelAddress\Entities\Country;
+use Werxe\LaravelAddress\Contracts\Address as Contract;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
 class Address extends Eloquent implements Contract

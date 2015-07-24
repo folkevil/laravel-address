@@ -1,6 +1,6 @@
 <?php
 
-namespace Werxe\Address\Contracts;
+namespace Werxe\LaravelAddress\Contracts;
 
 interface Country
 {

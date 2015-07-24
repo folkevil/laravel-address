@@ -1,22 +1,22 @@
 <?php
 
-namespace Werxe\Address;
+namespace Werxe\LaravelAddress;
 
-use Werxe\Address\Contracts\Address;
+use Werxe\LaravelAddress\Contracts\Address;
 
 class Schema
 {
     /**
      * The address instance.
      *
-     * @var \Werxe\Address\Contracts\Address
+     * @var \Werxe\LaravelAddress\Contracts\Address
      */
     protected $address;
 
     /**
      * Constructor.
      *
-     * @param  \Werxe\Address\Contracts\Address  $address
+     * @param  \Werxe\LaravelAddress\Contracts\Address  $address
      * @return void
      */
     public function __construct(Address $address)

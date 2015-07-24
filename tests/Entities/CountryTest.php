@@ -1,9 +1,9 @@
 <?php
 
-namespace Werxe\Address\Tests\Entities;
+namespace Werxe\LaravelAddress\Tests\Entities;
 
-use Werxe\Address\Entities\Country;
-use Werxe\Address\Tests\FunctionalTestCase;
+use Werxe\LaravelAddress\Entities\Country;
+use Werxe\LaravelAddress\Tests\FunctionalTestCase;
 
 class CountryTest extends FunctionalTestCase
 {

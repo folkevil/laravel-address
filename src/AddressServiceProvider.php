@@ -1,6 +1,6 @@
 <?php
 
-namespace Werxe\Address;
+namespace Werxe\LaravelAddress;
 
 use Illuminate\Support\ServiceProvider;
 

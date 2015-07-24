@@ -1,12 +1,12 @@
 <?php
 
-namespace Werxe\Address\Tests\Entities;
+namespace Werxe\LaravelAddress\Tests\Entities;
 
-use Werxe\Address\Entities\Country;
-use Werxe\Address\Entities\Address;
-use Werxe\Address\Tests\FunctionalTestCase;
+use Werxe\LaravelAddress\Entities\Country;
+use Werxe\LaravelAddress\Entities\Address;
+use Werxe\LaravelAddress\Tests\FunctionalTestCase;
 
-use Werxe\Address\Tests\Stubs\User;
+use Werxe\LaravelAddress\Tests\Stubs\User;
 
 class AddressTest extends FunctionalTestCase
 {
