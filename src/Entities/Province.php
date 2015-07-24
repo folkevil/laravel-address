@@ -2,11 +2,10 @@
 
 namespace Werxe\LaravelAddress\Entities;
 
-use Werxe\LaravelAddress\Entities\Country;
+use Illuminate\Database\Eloquent\Model;
 use Werxe\LaravelAddress\Contracts\Province as Contract;
-use Illuminate\Database\Eloquent\Model as Eloquent;
 
-class Province extends Eloquent implements Contract
+class Province extends Model implements Contract
 {
     /**
      * {@inheritdoc}

@@ -2,12 +2,10 @@
 
 namespace Werxe\LaravelAddress\Entities;
 
-use Werxe\LaravelAddress\Schema;
-use Werxe\LaravelAddress\Entities\Country;
+use Illuminate\Database\Eloquent\Model;
 use Werxe\LaravelAddress\Contracts\Address as Contract;
-use Illuminate\Database\Eloquent\Model as Eloquent;
 
-class Address extends Eloquent implements Contract
+class Address extends Model implements Contract
 {
     /**
      * {@inheritdoc}
@@ -46,12 +44,4 @@ class Address extends Eloquent implements Contract
     {
         return $this->morphTo();
     }
-
-    /**
-     * {@inheritdoc}
-     */
-    // public function format()
-    // {
-    //     return (new Schema($this))->format();
-    // }
 }
