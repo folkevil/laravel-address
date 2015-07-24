@@ -2,16 +2,11 @@
 
 namespace Werxe\LaravelAddress\Tests;
 
-use Werxe\LaravelAddress\Entities\Country;
 use Illuminate\Support\Facades\Schema;
+use Werxe\LaravelAddress\Entities\Country;
 
 class FunctionalTestCase extends \Orchestra\Testbench\TestCase
 {
-    protected function createCountry(array $attributes)
-    {
-        return Country::create($attributes);
-    }
-
     /**
      * Setup the test environment.
      *

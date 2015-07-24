@@ -10,7 +10,7 @@ class CountryTest extends FunctionalTestCase
     /** @test */
     public function it_can_create_a_new_country()
     {
-        $country = $this->createCountry([ 'iso_name' => 'US', 'name' => 'United States' ]);
+        $country = Country::create([ 'iso_name' => 'US', 'name' => 'United States' ]);
 
         $this->assertSame('US', $country->iso_name);
         $this->assertSame('United States', $country->name);
