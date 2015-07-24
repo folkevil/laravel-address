@@ -20,7 +20,7 @@ trait AddressableTrait
      */
     public function hasAddresses()
     {
-        return (bool) $this->address->count();
+        return (bool) $this->addresses->count();
     }
 
     /**
