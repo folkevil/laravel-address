@@ -23,7 +23,7 @@ class FunctionalTestCase extends \Orchestra\Testbench\TestCase
 
         $this->artisan('migrate', [
             '--database' => 'testbench',
-            '--realpath' => realpath(__DIR__.'/../src/migrations'),
+            '--realpath' => realpath(__DIR__.'/../resources/migrations'),
         ]);
 
         Schema::create('users', function ($table) {
