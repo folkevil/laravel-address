@@ -1,6 +1,6 @@
 ## Laravel Address
 
-[![Build Status](https://travis-ci.org/werxe/laravel-address.svg?branch=1.0)](https://travis-ci.org/werxe/laravel-address)
+[![Build Status](https://travis-ci.org/werxe/laravel-address.svg?branch=master)](https://travis-ci.org/werxe/laravel-address)
 
 Address management is a common task for applications that handles customer information like ecommerce applications where a customer can have many billing and shipping addresses.
 
