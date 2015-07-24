@@ -17,7 +17,6 @@
         "orchestra/testbench": "~3.0"
     },
     "autoload": {
-        "classmap": [ "src/migrations" ],
         "psr-4": { "Werxe\\Address\\": "src/" }
     },
     "autoload-dev": {
