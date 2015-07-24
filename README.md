@@ -1,4 +1,6 @@
-## Address 
+## Laravel Address
+
+[![Build Status](https://travis-ci.org/werxe/laravel-address.svg?branch=1.0)](https://travis-ci.org/werxe/laravel-address)
 
 Address management is a common task for applications that handles customer information like ecommerce applications where a customer can have many billing and shipping addresses.
 
@@ -8,53 +10,49 @@ This package comes with a Country and a Province model which are related to each
 
 A country can have many provinces and an address will belong to a country and to a province.
 
-## Installation
+## Requirements
 
-Open your terminal and navigate to your application root folder and then run `composer require werxe/address "~1.0"`
+To use this package you need:
 
-Once that's complete, add the Address service provider inside your `config/app.php` file:
+- PHP >= 5.5.9 or HHVM >= 3.6 (latest stable version of PHP or HHVM is recommended)
+- Laravel >= 5.1
 
-`'Werxe\Address\AddressServiceProvider',`
+## Documentation
 
-Run `php vendor:publish` to publish the Address migration files and then run `php artisan migrate`.
+Reader-friendly Documentation can be found [here](https://github.com/werxe/laravel-address/wiki).
 
-You're all set!
+## Changelog
 
-## Setup your model
+Important versions listed below. Refer to the [Changelog](CHANGELOG.md) for a full history of the project.
 
-You'll need to insert the `Werxe\Address\Traits\AddressableTrait` trait and register a method, like so:
+- [1.0](CHANGELOG.md) - 2015-07-10
 
-```php
-namespace App\Models;
+## Testing
 
-use Werxe\Address\Entities\Address;
-use Werxe\Address\Traits\AddressableTrait;
+Werxe\LaravelSeo has a [PHPUnit](https://phpunit.de/) test suite. To run the tests, run the following command from the project folder.
 
-class User extends Eloquent
-{
-    use AddressableTrait;
-
-    /**
-     * {@inheritdoc}
-     */
-    protected $table = 'users';
-
-    /**
-     * {@inheritdoc}
-     */
-    public function addresses()
-    {
-        return $this->morphMany(Address::class, 'entity');
-    }
-}
+```sh
+$ phpunit
 ```
 
-## Security Vulnerabilities
+## Support
 
-If you discover a security vulnerability within this package, please send an e-mail to Bruno Gaspar at bruno@werxe.com. All security vulnerabilities will be promptly addressed.
+The following support channels can be used for contact.
+
+- [Email](mailto:hello@werxe.com)
+
+Bug reports, feature requests, and pull requests can be submitted by following our [Contribution Guide](CONTRIBUTING.md).
+
+## Contributing
+
+Contributions are welcome and will be fully credited. Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+
+## Security
+
+If you discover any security related issues, please email bruno@werxe.com instead of using the issue tracker.
 
 ### License
 
 This software is released under the [BSD 3-Clause](LICENSE) License.
 
-© 2014-2015 Werxe, All rights reserved.
+© 2011-2015 Werxe LTD, All rights reserved.
