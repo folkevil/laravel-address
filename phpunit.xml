@@ -11,7 +11,7 @@
          stopOnFailure="false"
 >
     <testsuites>
-        <testsuite name="Address Test Suite">
+        <testsuite name="Laravel Address Test Suite">
             <directory suffix="Test.php">./tests/</directory>
         </testsuite>
     </testsuites>
@@ -19,13 +19,9 @@
         <whitelist>
             <directory suffix=".php">src/</directory>
             <exclude>
-                <directory>./src/migrations</directory>
-                <file>./src/Schema.php</file>
-                <file>./src/AddressServiceProvider.php</file>
+                <directory>./resources/migrations</directory>
+                <file>./src/LaravelAddressServiceProvider.php</file>
             </exclude>
         </whitelist>
     </filter>
-    <logging>
-        <log type="coverage-text" target="php://stdout" showUncoveredFiles="true"/>
-    </logging>
 </phpunit>
